@@ -12,12 +12,15 @@
 ;(function($){
 
 	$(document).ready(function(){
-		//var $slider = $('.ba-slider');
+		var $slider = $('.ba-slider');
 
-		// $slider.slick({
-		// 	dots: true,
-		// 	infinite: false
-		// });
+		$slider.slick({
+			infinite: true,
+			arrows: true,
+			prevArrow: '.ba-slider-prev',
+			nextArrow: '.ba-slider-next',
+			slidesToShow: 2,
+		});
 	});
 
 })(jQuery);
